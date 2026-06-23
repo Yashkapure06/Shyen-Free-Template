@@ -3,9 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite dev --port 3000",
-    "build": "vite build",
-    "start": "node .output/server/index.mjs"
+    "dev": "node api.js && vite dev --port 3000",
+    "build": "node api.js && vite build",
+    "start": "node api.js && node .output/server/index.mjs"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.95.0",
